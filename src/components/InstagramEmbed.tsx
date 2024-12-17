@@ -37,7 +37,7 @@ export default function InstagramEmbed() {
 
     return (
         <blockquote
-        className="instagram-media custom-instagram p-0"
+        className="instagram-media custom-instagram p-1 sm:p-0"
         data-instgrm-permalink="https://www.instagram.com/poke.d.bag/?utm_source=ig_embed&amp;utm_campaign=loading"
         data-instgrm-version="14"
         style={{
