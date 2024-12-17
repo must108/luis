@@ -5,7 +5,7 @@ import InstagramEmbed from '@/components/InstagramEmbed';
 import TikTokEmbed from '@/components/TikTokEmbed';
 
 export default function Home() {  return (
-    <main className='mx-auto pt-10 pb-20 sm:pb-40'>
+    <main className='mx-auto pt-10 pb-40'>
         <header className='font-zyHeaven text-white text-center text-4xl sm:text-5xl select-none'>
           Luis Hidalgo
         </header>
@@ -14,7 +14,7 @@ export default function Home() {  return (
           luis.hidalgo@bruh.com
           </p>
         </a>
-      <div className="flex justify-center flex-row gap-12 pt-10">
+      <div className="flex justify-center flex-col-reverse sm:flex-row items-center gap-12 pt-10">
         <div className='flex flex-col gap-4'>
             <div className='relative'>
               <iframe
@@ -41,7 +41,7 @@ export default function Home() {  return (
               </iframe>
             </div>
         </div>
-        <div className='flex flex-col gap-4'>
+        <div className='flex flex-col gap-4 p-0'>
           <InstagramEmbed />
           <TikTokEmbed />
         </div>
