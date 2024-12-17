@@ -3,34 +3,41 @@
 import React from 'react';
 
 export default function Home() {  return (
-    <main className='w-full flex justify-center align-items pt-10 pb-40'>
-      <div className="flex flex-col gap-6">
-        <header className='font-ZYHeaven text-4xl sm:text-5xl select-none'>
+    <main className='max-w-screen-md mx-auto pt-10 pb-40 '>
+        <header className='font-zyHeaven text-white text-center text-4xl sm:text-5xl select-none'>
           Luis Hidalgo
         </header>
-        <div className='relative pb-[56.25%] h-0'>
-          <iframe
-            src="https://www.youtube.com/embed?listType=playlist&list=UUQzQF3X3qyESt5Tz99DOpxA"
-            className='absolute top-0 left-0 w-full h-full'>
-          </iframe>
-        </div>
-        <div className='relative pb-[56.25%] h-0'>
-          <iframe
-            src="https://www.youtube.com/embed?listType=playlist&list=UUQzQF3X3qyESt5Tz99DOpxA&index=2"
-            className='absolute top-0 left-0 w-full h-full'>
-          </iframe>
-        </div>
-        <div className='relative pb-[56.25%] h-0'>
-          <iframe
-            src="https://www.youtube.com/embed?listType=playlist&list=UUQzQF3X3qyESt5Tz99DOpxA&index=3"
-            className='absolute top-0 left-0 w-full h-full'>
-          </iframe>
-        </div>
-        <div className='relative pb-[56.25%] h-0'>
-          <iframe
-            src="https://www.youtube.com/embed?listType=playlist&list=UUQzQF3X3qyESt5Tz99DOpxA&index=4"
-            className='absolute top-0 left-0 w-full h-full'>
-          </iframe>
+        <a href="mailto:luis.hidalgo@bruh.com" target="_blank">
+          <p className='font-inter text-center text-md text-white'>
+          luis.hidalgo@bruh.com
+          </p>
+        </a>
+      <div className="flex flex-col gap-6 pt-6">
+        <div className='flex flex-col'>
+            <div className='relative pb-5'>
+              <iframe
+                src="https://www.youtube.com/embed?listType=playlist&list=UUQzQF3X3qyESt5Tz99DOpxA"
+                className='w-1/2.5 h-[190px]'>
+              </iframe>
+            </div>
+            <div className='relative pb-5'>
+              <iframe
+                src="https://www.youtube.com/embed?listType=playlist&list=UUQzQF3X3qyESt5Tz99DOpxA&index=2"
+                className='w-1/2.5 h-[190px]'>
+              </iframe>
+            </div>
+            <div className='relative pb-5'>
+              <iframe
+                src="https://www.youtube.com/embed?listType=playlist&list=UUQzQF3X3qyESt5Tz99DOpxA&index=3"
+                className='w-1/2.5 h-[190px]'>
+              </iframe>
+            </div>
+            <div className='relative pb-5'>
+              <iframe
+                src="https://www.youtube.com/embed?listType=playlist&list=UUQzQF3X3qyESt5Tz99DOpxA&index=4"
+                className='w-1/2.5 h-[190px]'>
+              </iframe>
+            </div>
         </div>
       </div>
     </main>

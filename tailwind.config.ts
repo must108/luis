@@ -13,7 +13,8 @@ export default {
         background: '#6E5191'
       },
       fontFamily: {
-        custom: ['ZYHeaven', ...fontFamily.sans],
+        inter: ['var(--font-inter)', ...fontFamily.sans],
+        zyHeaven: ['ZYHeaven', ...fontFamily.sans]
       }
     },
   },
