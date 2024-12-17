@@ -5,7 +5,7 @@ import InstagramEmbed from '@/components/InstagramEmbed';
 import TikTokEmbed from '@/components/TikTokEmbed';
 
 export default function Home() {  return (
-    <main className='mx-auto pt-10 pb-40'>
+    <main className='mx-auto pt-10 pb-20 sm:pb-40'>
         <header className='font-zyHeaven text-white text-center text-4xl sm:text-5xl select-none'>
           Luis Hidalgo
         </header>
@@ -47,7 +47,7 @@ export default function Home() {  return (
         </div>
       </div>
       <div className='flex justify-center pt-16'>
-        <p className='text-xs mt-auto font-bold'>
+        <p className='text-xs mt-auto font-bold text-white'>
           built by <a href="https://mustaeen.dev/" target="_blank" className='hover:underline'>must</a>
         </p>
       </div>
