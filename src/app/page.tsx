@@ -43,7 +43,7 @@ export default function Home() {  return (
               </iframe>
             </div>
         </div>
-        <div className='order-1 lg:order-2 flex flex-col gap-4 pt-0 lg:pt-12'>
+        <div className='order-1 lg:order-2 flex flex-col gap-4 pt-0 lg:pt-12 mx-auto sm:mx-0'>
           <InstagramEmbed />
           <TikTokEmbed />
         </div>
