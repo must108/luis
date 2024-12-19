@@ -2,7 +2,6 @@ import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const inter = Inter({
   subsets: ['latin'],
   variable: '--font-inter',
@@ -36,10 +35,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+
         {/* script for google adsense */}
         <script 
           async 
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5860086061586971"
+          src={process.env.NEXT_PUBLIC_ADSENSE_SITE}
           crossOrigin="anonymous">  
         </script>
       </head>

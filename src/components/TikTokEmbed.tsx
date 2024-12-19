@@ -11,7 +11,7 @@ interface TikTokWindow extends Window {
 export default function TikTokEmbed() {
     useEffect(() => {
         const script = document.createElement("script");
-        script.src = "https://www.tiktok.com/embed.js";
+        script.src = process.env.NEXT_PUBLIC_TIKTOK_EMBED!;
         script.async = true;
 
         script.onload = () => {
@@ -23,7 +23,7 @@ export default function TikTokEmbed() {
 
         script.onerror = () => {
             const fallbackScript = document.createElement("script");
-            fallbackScript.src = "https://iframely.net/files/tiktok-embed.js";
+            fallbackScript.src = process.env.NEXT_PUBLIC_TIKTOK_FALLBACK!;
             fallbackScript.async = true;
             document.body.appendChild(fallbackScript);
         };
@@ -38,7 +38,7 @@ export default function TikTokEmbed() {
     return (
         <blockquote
         className="tiktok-embed p-0"
-        cite="https://www.tiktok.com/@poke.d.bag"
+        cite={process.env.NEXT_PUBLIC_TIKTOK_CITE}
         data-unique-id="poke.d.bag"
         data-embed-from="oembed"
         data-embed-type="creator"
@@ -49,13 +49,13 @@ export default function TikTokEmbed() {
             margin: "0",
             border: "none",
             boxSizing: "border-box",
-            borderRadius: "10px",
+            borderRadius: "1rem",
         }}
       >
         <section>
           <a
             target="_blank"
-            href="https://www.tiktok.com/@poke.d.bag?refer=creator_embed"
+            href={process.env.NEXT_PUBLIC_TIKTOK_HREF}
             rel="noopener noreferrer"
             className="text-blue-600 hover:underline"
           >
