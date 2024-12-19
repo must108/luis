@@ -23,8 +23,9 @@
 
 .custom-instagram {
   background-color: #6E5191;
+  max-width: 380px;
   color: #fff !important;
-  border-radius: 8px;
+  border-radius: 1rem;
   padding: 10px;
   text-align: center;
 }
