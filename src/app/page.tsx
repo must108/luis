@@ -15,8 +15,8 @@ export default function Home() {  return (
             luis.hidalgo@bruh.com
           </a>
         </div>
-      <div className="flex justify-center flex-col lg:flex-row items-center gap-12 pt-10">
-      <div className='order-2 lg:order-1 flex flex-col gap-4'>
+      <div className="flex justify-center flex-col lg:flex-row items-center gap-12 pt-10 ">
+      <div className='order-2 lg:order-1 flex flex-col gap-4 '>
             <h1 className='text-xl text-white font-zyHeaven mx-auto'>English</h1>
             <div className='relative'>
               <iframe

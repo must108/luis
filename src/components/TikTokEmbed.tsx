@@ -37,7 +37,7 @@ export default function TikTokEmbed() {
 
     return (
         <blockquote
-        className="tiktok-embed p-0"
+        className="tiktok-embed p-0 overflow-hidden"
         cite={process.env.NEXT_PUBLIC_TIKTOK_CITE}
         data-unique-id="poke.d.bag"
         data-embed-from="oembed"
@@ -57,7 +57,7 @@ export default function TikTokEmbed() {
             target="_blank"
             href={process.env.NEXT_PUBLIC_TIKTOK_HREF}
             rel="noopener noreferrer"
-            className="text-blue-600 hover:underline"
+            className="text-blue-600 hover:underline overflow-hidden"
           >
           </a>
         </section>
