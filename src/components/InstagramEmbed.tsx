@@ -37,7 +37,7 @@ export default function InstagramEmbed() {
 
     return (
         <blockquote
-        className="instagram-media custom-instagram pr-6 sm:p-0"
+        className="instagram-media custom-instagram pr-7 sm:p-0"
         data-instgrm-permalink={process.env.NEXT_PUBLIC_IG_PERMALINK}
         data-instgrm-version="14"
         style={{
