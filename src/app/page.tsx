@@ -10,11 +10,11 @@ export default function Home() {  return (
         <header className='font-zyHeaven text-white text-center text-4xl sm:text-5xl select-none'>
           Luis Hidalgo
         </header>
-        <div className='flex justify-center'>
+        {/* <div className='flex justify-center'>
           <a href="mailto:luis.hidalgo@bruh.com" className="font-inter text-md text-white" target="_blank">
             luis.hidalgo@bruh.com
           </a>
-        </div>
+        </div> */}
       <div className="flex justify-center flex-col lg:flex-row items-center gap-12 pt-10 ">
       <div className='order-2 lg:order-1 flex flex-col gap-4 '>
             <h1 className='text-xl text-white font-zyHeaven mx-auto'>English</h1>
