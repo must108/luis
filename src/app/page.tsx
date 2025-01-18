@@ -6,8 +6,8 @@ import TikTokEmbed from '@/components/TikTokEmbed';
 import AdComponent from '@/components/AdComponent';
 
 export default function Home() {  return (
-    <main className='mx-auto pt-10 pb-40'>
-        <header className='font-zyHeaven text-white text-center text-4xl sm:text-5xl select-none'>
+    <main className='mx-auto pt-10 pb-40 relative z-2'>
+        <header className='z-1 font-zyHeaven text-white text-center text-4xl sm:text-5xl select-none'>
           Luis Hidalgo
         </header>
         {/* <div className='flex justify-center'>
@@ -17,7 +17,7 @@ export default function Home() {  return (
         </div> */}
       <div className="flex justify-center flex-col lg:flex-row items-center gap-12 pt-10 ">
       <div className='order-2 lg:order-1 flex flex-col gap-4 '>
-            <h1 className='text-xl text-white font-zyHeaven mx-auto'>English</h1>
+            <h1 className='text-xl text-white font-zyHeaven mx-auto z-1'>English</h1>
             <div className='relative'>
               <iframe
                 src="https://www.youtube.com/embed?listType=playlist&list=UUTIgHSsEoMMAJWWrZxlT1yQ"
@@ -48,7 +48,7 @@ export default function Home() {  return (
           <TikTokEmbed />
         </div>
         <div className='order-3 lg:order-3 flex flex-col gap-4'>
-            <h1 className='text-white text-xl font-zyHeaven mx-auto'>Espanol</h1>
+            <h1 className='text-white text-xl font-zyHeaven mx-auto z-1'>Espanol</h1>
             <div className='relative'>
               <iframe
                 src="https://www.youtube.com/embed?listType=playlist&list=UUQzQF3X3qyESt5Tz99DOpxA"
